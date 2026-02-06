@@ -1,7 +1,12 @@
-
 package lab.pkg3.clases.abstractas;
 
+import javax.swing.Icon;
 
-public class Carta {
 
+public abstract class Carta {
+    
+    public Carta(int id, boolean descubierta, Icon imagen){
+        
+    }
+    
 }
