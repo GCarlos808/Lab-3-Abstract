@@ -17,8 +17,12 @@ public class GUI extends JFrame {
     }
     
     private void initComponents() {
-        txtJugador1 = new JTextField(10);
-        txtJugador2 = new JTextField(10);
+        txtJugador1 = new JTextField(15);
+        txtJugador1.setBounds(340, 30, 150, 25);
+
+        txtJugador2 = new JTextField(15);
+        txtJugador2.setBounds(340, 70, 150, 25);
+
         btnIniciar = new JButton("Iniciar");
         
         btnIniciar.addActionListener(e -> {
