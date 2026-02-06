@@ -1,5 +1,6 @@
 package lab.pkg3.clases.abstractas;
 
+<<<<<<< HEAD
 import java.awt.Color;
 import java.awt.Font;
 
@@ -10,12 +11,19 @@ public class CartaNumero extends Carta {
         super(valor);
         this.setFont(new Font("Arial", Font.BOLD, 24));
         this.setBackground(Color.LIGHT_GRAY);
+=======
+public class CartaNumero extends Carta {
+    
+    public CartaNumero(int valor, String rutaFrente) {
+        super(valor, rutaFrente);
+>>>>>>> bbedaba99926101507ba9850a80b28121ec055de
     }
     
     @Override
     public void mostrar() {
-        this.setText(String.valueOf(valor));
+        this.setIcon(imagenFrente);
         this.revelada = true;
+<<<<<<< HEAD
         this.setBackground(Color.WHITE);
         this.setEnabled(true);
     }
@@ -28,4 +36,7 @@ public class CartaNumero extends Carta {
             this.setBackground(Color.LIGHT_GRAY);
         }
     }
+=======
+    }
+>>>>>>> bbedaba99926101507ba9850a80b28121ec055de
 }

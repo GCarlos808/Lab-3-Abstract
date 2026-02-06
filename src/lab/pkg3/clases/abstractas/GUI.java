@@ -33,19 +33,8 @@ public class GUI extends JFrame {
                 JOptionPane.showMessageDialog(this, "Ingrese ambos nombres.");
                 return;
             }
-            
-            JFrame tablero = new JFrame("Tablero de Prueba");
-            tablero.setSize(600, 600);
-            tablero.setLocationRelativeTo(null);
-            tablero.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            
-            JPanel panel = new JPanel();
-            panel.add(new JLabel("Aquí irá el tablero del juego"));
-            tablero.add(panel);
-            
-            tablero.setVisible(true);
-            
-            this.dispose();
+            new Juego(j1, j2);
+            this.dispose();           
         });
         
         JPanel panel = new JPanel();
